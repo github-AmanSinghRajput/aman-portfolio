@@ -1,0 +1,50 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark Theme overrides when .dark is on <html> */
+html.dark {
+  --bg-color: #0D1117;
+  --text-color: #F0F6FC;
+}
+
+/* Use these custom props across the site */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.eye {
+  position: fixed;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;          /* never block clicks */
+  z-index: 60;
+}
+
+.pupil {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  transition: transform 0.04s linear;
+}
