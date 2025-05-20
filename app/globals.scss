@@ -30,10 +30,10 @@ body {
 .eye {
   position: fixed;
   width: 28px;
-  height: 28px;
+  height: 32px;
   border: 2px solid #000;
   border-radius: 50%;
-  background: #fff;
+  background: lavender;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,5 +46,17 @@ body {
   height: 10px;
   background: #000;
   border-radius: 50%;
-  transition: transform 0.04s linear;
+  transition: transform 0.06s linear;
+}
+
+@media (max-width: 640px) {
+  .cat-eyes { display: none; }
+}
+
+@keyframes blink {
+  0%, 90%, 100% { ry:12 }
+  92%, 98%      { ry:1 }
+}
+ellipse {
+  animation: blink 2.2s infinite;
 }

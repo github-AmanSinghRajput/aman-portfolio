@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Phone, Mail, MapPin, ArrowRightCircle, Code, Zap } from "lucide-react";
 import HeroBackground from "./components/HeroBackground";
+import CatEyes2 from "./components/CatEyes2";
 
 export default function HomePage() {
   return (
@@ -58,6 +59,7 @@ export default function HomePage() {
             Let’s talk <ArrowRightCircle className="w-5 h-5" />
           </a>
         </div>
+        <CatEyes2 />
       </section>
 
       {/* ABOUT & CONTACT SECTION */}
