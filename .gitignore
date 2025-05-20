@@ -44,13 +44,13 @@ pnpm-debug.log*
 # -------------------------------------------------
 #  Images & generated assets
 # -------------------------------------------------
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.webp
-public/assets/
-!public/assets/**/   # <— remove “!” if you want to ignore all heavy assets
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.webp
+# public/assets/
+# !public/assets/**/   # <— remove “!” if you want to ignore all heavy assets
 
 # -------------------------------------------------
 #  Lock files (keep ONE, ignore others)
