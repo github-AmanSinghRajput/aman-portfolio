@@ -15,7 +15,10 @@ export default function HomePage() {
         {/* Background Image */}
         <HeroBackground />
         {/* Soft white gradient for readability on top of image */}
-        <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/80 to-transparent z-10 md:hidden"></div>
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/80 to-transparent
+                z-10 md:hidden dark:hidden"
+        ></div>
 
         <div className="text-center px-6 max-w-3xl bg-white/60 dark:bg-black/40 backdrop-blur-md rounded-xl z-20 p-6">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-neutral-900 dark:text-primaryText">
@@ -56,7 +59,7 @@ export default function HomePage() {
             className="inline-flex items-center gap-2 bg-ctaRed text-white px-7 py-3 rounded-md
                font-semibold hover:scale-105 active:scale-100 transition-transform"
           >
-            Let’s talk <ArrowRightCircle className="w-5 h-5" />
+            Get to know me <ArrowRightCircle className="w-5 h-5" />
           </a>
         </div>
         <CatEyes2 />
