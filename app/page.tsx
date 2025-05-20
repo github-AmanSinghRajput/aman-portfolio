@@ -27,6 +27,12 @@ export default function HomePage() {
             <br className="hidden md:block" />
             at ⚡ speed
           </h1>
+          {/* theme switch hint */}
+<p className="text-sm md:text-base italic mb-6
+             text-neutral-600 dark:text-neutral-400">
+  Too bright? Hit the <span className="font-semibold text-ctaRed">red moon&nbsp;🌗</span>
+  in the bottom-right to swap themes.
+</p>
           {/* <p className="text-lg md:text-xl mb-8 text-neutral-800 dark:text-primaryText">
             4½ years of turning coffee&nbsp;☕ into{" "}
             <span className="font-semibold">blazing-fast UIs</span>. Next.js,
@@ -88,11 +94,27 @@ export default function HomePage() {
                transition-transform duration-500 ease-out
                group-hover:rotate-x-3 group-hover:-rotate-y-3 group-hover:scale-105"
               >
-                <Image
+                {/* <Image
                   src="/assets/profile.jpg"
                   alt="Aman's profile"
                   fill
                   className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                /> */}
+                <Image
+                  src="/assets/profile-dark.jpg"
+                  alt="Aman's profile"
+                  fill
+                  className="object-cover object-center dark:hidden"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
+                <Image
+                  src="/assets/profile-light.jpg"
+                  alt="Aman's profile"
+                  fill
+                  className="object-cover object-center hidden dark:block"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />
@@ -130,7 +152,7 @@ export default function HomePage() {
    p-8 rounded-xl space-y-10 h-full
    shadow-lg shadow-black/10            
    bg-white text-neutral-900             
-   dark:bg-[#0f1117] dark:text-primaryText 
+   dark:bg-[#1b1e24] dark:text-primaryText ring-1 ring-black/5 dark:ring-white/10
  "
           >
             {/* Contact */}
@@ -223,7 +245,7 @@ export default function HomePage() {
             </div>
             {/* Highlight Projects */}
             {/* Company Projects (plain) */}
-            <div>
+            {/* <div>
               <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
                 <Code className="w-5 h-5 text-ctaRed dark:text-ctaRed" />{" "}
                 Company Projects
@@ -234,7 +256,7 @@ export default function HomePage() {
                 <li>Price Force Dashboard (ShyftLabs)</li>
                 <li>Shopi – Angular SSR Storefront (ShyftLabs)</li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Personal Projects (clickable) */}
             <div className="flex-1">
