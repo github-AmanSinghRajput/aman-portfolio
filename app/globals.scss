@@ -43,21 +43,22 @@ body {
 }
 
 .pupil {
-  width: 10px;
+  width: 7px;
   height: 10px;
   background: #000;
   border-radius: 50%;
   transition: transform 0.06s linear;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 750px) {
   .cat-eyes { display: none; }
 }
 
 @keyframes blink {
-  0%, 90%, 100% { ry:12 }
+  0%, 90%, 100% { ry:19 }
   92%, 98%      { ry:1 }
 }
+
 ellipse {
-  animation: blink 2.2s infinite;
+  animation: blink 2.0s infinite;
 }

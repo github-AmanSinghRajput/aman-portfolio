@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Phone, Mail, MapPin, ArrowRightCircle, Code, Zap } from "lucide-react";
 import HeroBackground from "./components/HeroBackground";
 import CatEyes2 from "./components/CatEyes2";
+import ThemeHint from "./components/ThemeHint";
 
 export default function HomePage() {
   return (
@@ -15,10 +16,6 @@ export default function HomePage() {
         {/* Background Image */}
         <HeroBackground />
         {/* Soft white gradient for readability on top of image */}
-        <div
-          className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/80 to-transparent
-                z-10 md:hidden dark:hidden"
-        ></div>
 
         <div className="text-center px-6 max-w-3xl bg-white/60 dark:bg-black/40 backdrop-blur-md rounded-xl z-20 p-6">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-neutral-900 dark:text-primaryText">
@@ -28,11 +25,7 @@ export default function HomePage() {
             at ⚡ speed
           </h1>
           {/* theme switch hint */}
-<p className="text-sm md:text-base italic mb-6
-             text-neutral-600 dark:text-neutral-400">
-  Too bright? Hit the <span className="font-semibold text-ctaRed">red moon&nbsp;🌗</span>
-  in the bottom-right to swap themes.
-</p>
+          <ThemeHint />
           {/* <p className="text-lg md:text-xl mb-8 text-neutral-800 dark:text-primaryText">
             4½ years of turning coffee&nbsp;☕ into{" "}
             <span className="font-semibold">blazing-fast UIs</span>. Next.js,
@@ -67,8 +60,14 @@ export default function HomePage() {
           >
             Get to know me <ArrowRightCircle className="w-5 h-5" />
           </a>
+          <CatEyes2 />
         </div>
-        <CatEyes2 />
+        {/* Smooth gradient fade into contact section */}
+        <div
+          className="absolute bottom-0 left-0 w-full h-24 z-20
+             bg-gradient-to-b from-transparent to-gray-100
+             dark:to-[#0d1117] pointer-events-none"
+        />
       </section>
 
       {/* ABOUT & CONTACT SECTION */}
@@ -122,16 +121,14 @@ export default function HomePage() {
             </div>
             <h2 className="text-3xl font-bold mb-2">Aman Singh Rajput</h2>
             <p className="text-lg mb-4">
-              Front-end lead with 4.5 yrs turning Figma dreams into{" "}
-              <span className="font-semibold">sub-200 ms</span> realities. I’ve
-              shipped Next.js & Angular apps that manage{" "}
-              <span className="font-semibold">10,000-plus SKUs</span>, embedded
-              AI chat assistants, and kept Core Web Vitals in the green. Need
-              pixel-perfect UIs, ruthless performance tuning, or a dev who can
-              mentor while shipping?
-              <span className="text-ctaRed font-semibold">
-                I’ve got you covered.
-              </span>
+              Hi I'm a Senior Software Engineer (<span className="font-semibold">SDE 2</span>) who enjoys the sweet spot
+              between complex logic and smooth UI. Over the last 4½ years, I've
+              built frontend platforms (not just pretty websites) that handle
+              configurations of <span className="font-semibold">50,000+ SKUs</span>{" "}
+              without breaking a sweat. Need a dynamic, Figma-like canvas? An
+              embedded AI assistant? Or just ruthless optimization to keep those
+              Core Web Vitals in check?{" "}
+              <span className="text-ctaRed font-semibold">Count me in.</span>
             </p>
 
             <a

@@ -46,7 +46,7 @@ export default function CatEyes2() {
     <svg
       id="cat-eyes"
       viewBox="0 0 202.964 202.964"
-      className="absolute bottom-6 left-6 z-40 w-[140px] pointer-events-none select-none"
+      className="absolute bottom-2 left-2 w-[125px] pointer-events-none select-none z-30"
     >
       {/* ---------- shift silhouette 24 px right so head is centred ---------- */}
       <g transform="translate(-15 5)">
@@ -82,15 +82,15 @@ export default function CatEyes2() {
       <ellipse
         cx="82"
         cy="48"
-        rx="12"
-        ry="18"
+        rx="11"
+        ry="19"
         className="fill-[lime] dark:fill-[#C084FC]"
       />
       <ellipse
         cx="116"
         cy="48"
-        rx="12"
-        ry="18"
+        rx="11"
+        ry="19"
         className="fill-[lime] dark:fill-[#C084FC]"
       />
       /* ─ pupils ─ */
