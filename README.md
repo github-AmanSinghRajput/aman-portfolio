@@ -1,6 +1,6 @@
-# 👨‍💻 Aman Singh Rajput — Frontend Portfolio
+# 👨‍💻 Aman Singh Rajput — Portfolio
 
-> 🚀 “Midnight Samurai meets Fullstack”  
+> ✨ Turning Figma dreams into blazing-fast, beautiful interfaces  
 > Where pixel-perfect UI meets performance wizardry ⚡
 
 ---
@@ -16,7 +16,7 @@
 
 ## 💻 Live Demo
 
-🌍 [Visit the Portfolio](https://aman-portfolio.vercel.app) — *(once deployed)*
+🌍 [Visit the Portfolio](https://aman-singh-rajput.vercel.app/)
 
 ---
 
@@ -24,12 +24,12 @@
 
 ⚔️ 4.5 years of crafting UIs that *snap to life*  
 🧠 Full-stack student, mentor, performance freak  
-🌟 Shipped apps for 10,000+ SKUs, AI assistants, ETL pipelines  
+🌟 Shipped apps for Pricing Engines, AI assistants, ETL pipelines  
 🎯 Currently slinging code @ **ShyftLabs**
 
 ---
 
-## 🔨 Projects on Display
+## 🔨 Old Personal Projects on Display
 
 | Project | Description | Tech |
 |--------|-------------|------|
