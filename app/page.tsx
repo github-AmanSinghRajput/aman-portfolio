@@ -20,7 +20,7 @@ export default function HomePage() {
         <div className="text-center px-6 max-w-3xl bg-white/60 dark:bg-black/40 backdrop-blur-md rounded-xl z-20 p-6">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-neutral-900 dark:text-primaryText">
             Building&nbsp;
-            <span className="text-ctaRed">pixel-perfect&nbsp;front-ends </span>
+            <span className="text-ctaRed">pixel-perfect&nbsp;apps </span>
             <br className="hidden md:block" />
             at ⚡ speed
           </h1>
@@ -123,7 +123,7 @@ export default function HomePage() {
             <p className="text-lg mb-4">
               Hi I'm a Senior Software Engineer (<span className="font-semibold">SDE 2</span>) who enjoys the sweet spot
               between complex logic and smooth UI. Over the last 4½ years, I've
-              built frontend platforms (not just pretty websites) that handle
+              built logic heavy platforms (not just fancy UI's) that handle
               configurations of <span className="font-semibold">50,000+ SKUs</span>{" "}
               without breaking a sweat. Need a dynamic, Figma-like canvas? An
               embedded AI assistant? Or just ruthless optimization to keep those
